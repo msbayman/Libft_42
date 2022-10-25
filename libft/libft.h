@@ -1,6 +1,12 @@
 #ifndef LIBFT_H
 #define LIBFT_H
 
+typedef struct s_list
+{
+void *content;
+struct s_list *next;
+}t_list;
+
 
 #include <fcntl.h>
 #include <unistd.h>
@@ -24,7 +30,14 @@ int ft_isdigit (int a);
 char **ft_split(char const *s, char c);
 int ft_tolower(int c);
 int ft_toupper(int c);
+t_list *ft_lstlast(t_list *lst);
+int ft_lstsize(t_list *lst);
+t_list *ft_lstlast(t_list *lst);
+void ft_lstadd_back(t_list **lst, t_list *new);
 char *ft_strjoin(char const *s1, char const *s2);
+void ft_lstdelone(t_list *lst, void (*del)(void *));
+t_list *ft_lstnew(void *content);
+void ft_lstclear(t_list **lst, void (*del)(void *));
 int ft_isprint(int c);
 size_t ft_strlcat(char *  dst, const char *  src, size_t dstsize);
 int ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -49,5 +62,10 @@ char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+
+
+
+
 
 #endif
