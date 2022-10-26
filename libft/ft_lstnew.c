@@ -6,7 +6,7 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 12:10:20 by amsaoub           #+#    #+#             */
-/*   Updated: 2022/10/25 12:16:02 by amsaoub          ###   ########.fr       */
+/*   Updated: 2022/10/26 10:33:18 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,13 @@
 
 t_list *ft_lstnew(void *content)
 {
-	t_list *list;
-	
-	list = NULL;
-	list = malloc(sizeof(t_list));
-	if (list != NULL)
+	t_list *p;
+
+	p = malloc(sizeof(t_list));
+	if (p != NULL)
 	{
-		list ->content=content;
-		list -> next = NULL;
+		p->content=content;
+		p->next = NULL;
 	}
-	return (list);
+	return (p);
 }
