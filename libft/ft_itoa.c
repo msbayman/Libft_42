@@ -6,9 +6,10 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 13:21:05 by amsaoub           #+#    #+#             */
-/*   Updated: 2022/10/23 13:15:56 by amsaoub          ###   ########.fr       */
+/*   Updated: 2022/11/01 14:12:03 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include"libft.h"
 
 int	num_len(int num)

@@ -6,10 +6,11 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:45:54 by amsaoub           #+#    #+#             */
-/*   Updated: 2022/10/23 12:55:10 by amsaoub          ###   ########.fr       */
+/*   Updated: 2022/11/01 14:12:56 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+#include"libft.h"
 
 void	ft_putstr_fd(char *str, int fd)
 {

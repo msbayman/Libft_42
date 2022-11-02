@@ -6,9 +6,10 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 15:53:38 by amsaoub           #+#    #+#             */
-/*   Updated: 2022/10/23 12:46:38 by amsaoub          ###   ########.fr       */
+/*   Updated: 2022/11/01 14:40:23 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include"libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))

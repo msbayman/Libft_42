@@ -6,18 +6,20 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 10:53:31 by amsaoub           #+#    #+#             */
-/*   Updated: 2022/10/25 13:02:34 by amsaoub          ###   ########.fr       */
+/*   Updated: 2022/11/01 14:25:59 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-
-void ft_lstdelone(t_list *lst, void (*del)(void *))
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (lst)
+	t_list	*p;
+
+	p = lst;
+	if (p && del)
 	{
-		del(lst -> content);
-		free(lst);	
+		del(p -> content);
+		free(p);
 	}
 }

@@ -6,24 +6,23 @@
 /*   By: amsaoub <amsaoub@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:16:07 by amsaoub           #+#    #+#             */
-/*   Updated: 2022/10/26 12:22:15 by amsaoub          ###   ########.fr       */
+/*   Updated: 2022/10/31 10:23:05 by amsaoub          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-void ft_lstiter(t_list *lst, void (*f)(void *))
+
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list *p;
-	p=lst;
-	if (p)
+	t_list	*p;
+
+	p = lst;
+	if (p && f)
 	{
-		while (p!=NULL)
-	{
-		f(p->content);
-		p=p->next;
+		while (p != NULL)
+		{
+			f(p -> content);
+			p = p -> next;
+		}
 	}
-	}
-	
-	
-	
 }
